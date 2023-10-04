@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Consolas;
+  font-weight: 550;
+}
+h1 {
+  font-family: Courier, monospace;
+}
+li {
+  font-size: 15px;
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
