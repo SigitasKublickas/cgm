@@ -1,10 +1,9 @@
-import "./globals.css";
+import "../styles/global.css";
+import "../styles/responsive.css";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import NavBar from "@/layout/navbar";
 import Footer from "@/layout/footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "GRS",
@@ -17,8 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <NavBar />
+      <body>
+        <NavBar login={true} />
         {children}
         <Footer />
       </body>
